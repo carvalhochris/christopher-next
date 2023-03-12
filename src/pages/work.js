@@ -1,4 +1,5 @@
 import axios from "axios";
+import Head from "next/head";
 import Link from "next/link";
 import {
   Container,
@@ -28,6 +29,40 @@ export async function getStaticProps() {
 
 export default function WorkPage({ data }) {
   return (
+    <>
+    <Head>
+        <title>The Work</title>
+        <meta
+          name="description"
+          content="Content writer, educator, and self-taught developer"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* <!-- Google / Search Engine Tags --> */}
+        <meta itemprop="name" content="Christopher Carvalho" />
+        <meta itemprop="description" content="Content writer, educator, and self-taught developer" />
+        <meta itemprop="image" content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg" />
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:url" content="https://cc-next-chi.vercel.app" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Christopher Carvalho" />
+        <meta
+          property="og:description"
+          content="Content writer, educator, and self-taught developer"
+        />
+        <meta property="og:image" content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg" />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Christopher Carvalho" />
+        <meta
+          name="twitter:description"
+          content="Content writer, educator, and self-taught developer"
+        />
+        <meta name="twitter:image" content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg" />
+      </Head>
     <div>
       <Container mt={100} mb={100}>
       <Link href="/" legacyBehavior style={{ position: "relative" }}>
@@ -71,5 +106,6 @@ export default function WorkPage({ data }) {
       </Container>
 
     </div>
+    </>
   );
 }
