@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { Button, Container, Link } from "@chakra-ui/react";
@@ -9,6 +9,7 @@ import { Center } from "@chakra-ui/react";
 import { Text, Stack, Flex } from "@chakra-ui/react";
 import { AiFillGithub, AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 import { BsMastodon } from "react-icons/bs";
+import { Image } from '@chakra-ui/react'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -46,10 +47,16 @@ export default function Home() {
         {loaded || (
           <div>
             <Center>
-              <img
+              {/* <Image
                 className="artistimg"
                 src="https://unlockyoursound.com/wp-content/uploads/2023/02/chris-500-2.jpeg"
                 alt="artistprofile"
+              /> */}
+              <Image
+                borderRadius="100"
+                boxSize="150px"
+                src="https://unlockyoursound.com/wp-content/uploads/2023/02/chris-500-2.jpeg"
+                alt="Christopher Carvalho"
               />
             </Center>
             <br></br>
