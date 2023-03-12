@@ -35,7 +35,7 @@ export default function Home() {
           content="Content writer, educator, and self-taught developer"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="https://raw.githubusercontent.com/carvalhochris/christopher/main/public/chris-64.ico" />
+        {/* <link rel="icon" href="public/chris-64.ico" /> */}
 
         {/* <!-- Google / Search Engine Tags --> */}
         <meta itemprop="name" content="Christopher Carvalho" />
