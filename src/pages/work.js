@@ -17,6 +17,7 @@ import {
   Link as ChakraLink,
 } from "@chakra-ui/react";
 import { CloseIcon, ArrowBackIcon } from "@chakra-ui/icons";
+import ColorModeSwitch from "./components/colormode";
 
 export async function getStaticProps() {
   const res = await axios.get(
@@ -77,6 +78,9 @@ export default function WorkPage({ data }) {
         />
       </Head>
       <div>
+        <Center>
+          <ColorModeSwitch />
+        </Center>
         <Container mt={100} mb={100}>
           <Link href="/" legacyBehavior style={{ position: "relative" }}>
             <Box
