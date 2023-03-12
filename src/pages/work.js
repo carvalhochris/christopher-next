@@ -10,9 +10,10 @@ import {
   Center,
   WrapItem,
   Button,
+//   Image,
   Link as ChakraLink,
 } from "@chakra-ui/react";
-import { CloseIcon } from "@chakra-ui/icons";
+import { CloseIcon, ArrowBackIcon } from "@chakra-ui/icons";
 
 export async function getStaticProps() {
   const res = await axios.get(
@@ -28,6 +29,9 @@ export default function WorkPage({ data }) {
   return (
     <div>
       <Container mt={100} mb={100}>
+      <Link href="/" legacyBehavior style={{ position: "relative" }}>
+      <ArrowBackIcon mb={10} boxSize={6}/>
+      </Link>
         <Heading as="h1" mb={10}>
           The Work
         </Heading>
@@ -63,6 +67,7 @@ export default function WorkPage({ data }) {
           <CloseIcon />
         </Link>
       </Container>
+
     </div>
   );
 }
