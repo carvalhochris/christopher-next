@@ -53,7 +53,7 @@ export default function WorkPage({ data }) {
         />
 
         {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="https://cc-next-chi.vercel.app" />
+        <meta property="og:url" content="https://christophercarvalho.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Christopher Carvalho" />
         <meta
