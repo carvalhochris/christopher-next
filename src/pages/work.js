@@ -81,7 +81,7 @@ export default function WorkPage({ data }) {
         <Center>
           <ColorModeSwitch />
         </Center>
-        <Container mt={100} mb={100}>
+        <Container mt={10} mb={100}>
           <Link href="/" legacyBehavior style={{ position: "relative" }}>
             <Box
               boxSize="30px"
