@@ -17,7 +17,7 @@ import {
 import { BsMastodon } from "react-icons/bs";
 import { Image } from "@chakra-ui/react";
 import { GoCalendar } from "react-icons/go";
-import ColorModeSwitch from "./components/colormode";
+import ColorModeSwitch from "../components/colormode";
 // import { InlineWidget } from "react-calendly";
 // import { PopupButton } from "react-calendly";
 
@@ -35,7 +35,7 @@ export default function Home() {
           content="Content writer, educator, and self-taught developer"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://raw.githubusercontent.com/carvalhochris/christopher/main/public/chris-64.ico" />
 
         {/* <!-- Google / Search Engine Tags --> */}
         <meta itemprop="name" content="Christopher Carvalho" />

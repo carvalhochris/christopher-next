@@ -17,7 +17,7 @@ import {
   Link as ChakraLink,
 } from "@chakra-ui/react";
 import { CloseIcon, ArrowBackIcon } from "@chakra-ui/icons";
-import ColorModeSwitch from "./components/colormode";
+import ColorModeSwitch from "../components/colormode";
 
 export async function getStaticProps() {
   const res = await axios.get(
@@ -39,7 +39,7 @@ export default function WorkPage({ data }) {
           content="Content writer, educator, and self-taught developer"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://raw.githubusercontent.com/carvalhochris/christopher/main/public/chris-64.ico" />
 
         {/* <!-- Google / Search Engine Tags --> */}
         <meta itemprop="name" content="Christopher Carvalho" />
