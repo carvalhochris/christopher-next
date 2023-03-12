@@ -1,11 +1,20 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import React, { useState } from "react";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import { Button, Container, Link } from "@chakra-ui/react";
+import { CloseButton } from "@chakra-ui/close-button";
+import { Center } from "@chakra-ui/react";
+import { Text, Stack, Flex } from "@chakra-ui/react";
+import { AiFillGithub, AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
+import { BsMastodon } from "react-icons/bs";
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  let [loaded, setLoaded] = useState(false);
+
   return (
     <>
       <Head>
@@ -15,109 +24,86 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
+        {loaded && (
           <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
+            <Center>
+              <Stack pt={5}>
+                {/* <GetCards /> */}
+                <Center>
+                  <p className="emoji">😀</p>
+                </Center>
+                <Center>
+                  <CloseButton
+                    onClick={() => setLoaded((loaded = !loaded))}
+                    color="blue.500"
+                    mb={200}
+                  />
+                </Center>
+              </Stack>
+            </Center>
+          </div>
+        )}
+        {loaded || (
+          <div>
+            <Center>
+              <img
+                className="artistimg"
+                src="https://unlockyoursound.com/wp-content/uploads/2023/02/chris-500-2.jpeg"
+                alt="artistprofile"
               />
-            </a>
+            </Center>
+            <br></br>
+            <Center>
+              <Text></Text>
+              <Text></Text>
+            </Center>
+            <Center>
+              <Stack spacing={6} maxW={350}>
+                <Text fontSize="3xl">Hi, I'm Christopher.</Text>
+                <Text fontSize="2xl">
+                  Content writer, educator, and self-taught developer.
+                </Text>
+                <Text fontSize="1xl">
+                  I use React, ChakraUI, and Django Rest Framework.
+                </Text>
+                <Center>
+                  <Button
+                    colorScheme="blue"
+                    onClick={() => setLoaded((loaded = !loaded))}
+                    minW={300}
+                  >
+                    View Portfolio
+                  </Button>
+                </Center>
+                <Container mt={0} pt={0}></Container>
+              </Stack>
+            </Center>
+            <Container mt={0} pt={0} maxW={340}>
+              <Flex isInline gap={3}>
+                <Link href="https://github.com/carvalhochris" isExternal>
+                  <AiFillGithub size={30} />
+                </Link>
+                <Link href="mailto:hello@christophercarvalho.com" isExternal>
+                  <AiOutlineMail size={30} />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/christopher-carvalho-music/"
+                  isExternal
+                >
+                  <AiFillLinkedin size={30} />
+                </Link>
+                <a
+                  rel="me"
+                  target="#"
+                  href="https://mastodon.social/@carvalhochris"
+                >
+                  <BsMastodon size={30} />
+                </a>
+              </Flex>
+            </Container>
           </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+        )}
       </main>
     </>
-  )
+  );
 }
