@@ -88,10 +88,10 @@ export default function Home() {
             borderStyle="solid"
             borderColor="white"
             borderWidth={2}
-            boxSize="200px"
+            boxSize="150px"
             src="https://unlockyoursound.com/wp-content/uploads/2023/02/chris-500-2.jpeg"
             alt="Christopher Carvalho"
-            mt={50}
+            mt={0}
           />
         </Center>
         <br></br>

@@ -6,7 +6,7 @@ export default function ColorModeSwitch() {
 
   return (
     <>
-      <Button onClick={toggleColorMode} mb={0} mt={50}>
+      <Button onClick={toggleColorMode} mb={0} mt={10} mb={10} >
         {colorMode === "light" ? <MoonIcon size={5} /> : <SunIcon size={5} />}
       </Button>
     </>
