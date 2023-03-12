@@ -17,6 +17,7 @@ import {
 import { BsMastodon } from "react-icons/bs";
 import { Image } from "@chakra-ui/react";
 import { GoCalendar } from "react-icons/go";
+import ColorModeSwitch from "./components/colormode";
 // import { InlineWidget } from "react-calendly";
 // import { PopupButton } from "react-calendly";
 
@@ -38,8 +39,14 @@ export default function Home() {
 
         {/* <!-- Google / Search Engine Tags --> */}
         <meta itemprop="name" content="Christopher Carvalho" />
-        <meta itemprop="description" content="Content writer, educator, and self-taught developer" />
-        <meta itemprop="image" content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg" />
+        <meta
+          itemprop="description"
+          content="Content writer, educator, and self-taught developer"
+        />
+        <meta
+          itemprop="image"
+          content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg"
+        />
 
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content="https://cc-next-chi.vercel.app" />
@@ -49,7 +56,10 @@ export default function Home() {
           property="og:description"
           content="Content writer, educator, and self-taught developer"
         />
-        <meta property="og:image" content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg" />
+        <meta
+          property="og:image"
+          content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg"
+        />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -58,9 +68,15 @@ export default function Home() {
           name="twitter:description"
           content="Content writer, educator, and self-taught developer"
         />
-        <meta name="twitter:image" content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg" />
+        <meta
+          name="twitter:image"
+          content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg"
+        />
       </Head>
       <div>
+        <Center>
+          <ColorModeSwitch />
+        </Center>
         <Center>
           {/* <Image
                 className="artistimg"
@@ -75,7 +91,7 @@ export default function Home() {
             boxSize="200px"
             src="https://unlockyoursound.com/wp-content/uploads/2023/02/chris-500-2.jpeg"
             alt="Christopher Carvalho"
-            mt={100}
+            mt={50}
           />
         </Center>
         <br></br>
