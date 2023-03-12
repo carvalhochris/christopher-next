@@ -10,6 +10,7 @@ import {
   Center,
   WrapItem,
   Button,
+  Text,
 //   Image,
   Link as ChakraLink,
 } from "@chakra-ui/react";
@@ -43,6 +44,7 @@ export default function WorkPage({ data }) {
             <Heading as="h2" size="md" mb={5}>
               {item.title}
             </Heading>
+            <Text mb={5}>{item.desc}</Text>
             <Wrap mt={2}>
               {item.skills.map((skill, index) => (
                 <div key={index}>
