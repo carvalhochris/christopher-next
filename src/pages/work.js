@@ -124,6 +124,7 @@ export default function WorkPage({ data }) {
             //   </Center>
           ))}
           {/* <Divider /> */}
+          <Center>
           <Link href="/" legacyBehavior style={{ position: "relative" }}>
             <Box
               boxSize="30px"
@@ -134,6 +135,7 @@ export default function WorkPage({ data }) {
               <CloseIcon />
             </Box>
           </Link>
+          </Center>
         </Container>
       </div>
     </>
