@@ -89,7 +89,7 @@ export default function Home() {
             borderColor="white"
             borderWidth={2}
             boxSize="150px"
-            src="https://unlockyoursound.com/wp-content/uploads/2023/02/chris-500-2.jpeg"
+            src="./chris-500.jpeg"
             alt="Christopher Carvalho"
             mt={0}
           />
