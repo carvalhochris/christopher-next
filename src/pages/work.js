@@ -83,14 +83,9 @@ export default function WorkPage({ data }) {
         </Center>
         <Container mt={10} mb={100}>
           <Link href="/" legacyBehavior style={{ position: "relative" }}>
-            <Box
-              boxSize="30px"
-              display="flex"
-              alignItems="center"
-              cursor="pointer"
-            >
-              <ArrowBackIcon mb={10} boxSize={6} />
-            </Box>
+            {/* <Box > */}
+              <ArrowBackIcon boxSize="30px" mb={10} cursor="pointer" />
+            {/* </Box> */}
           </Link>
           <Heading as="h1" mb={10}>
             The Work
@@ -125,16 +120,16 @@ export default function WorkPage({ data }) {
           ))}
           {/* <Divider /> */}
           <Center>
-          <Link href="/" legacyBehavior style={{ position: "relative" }}>
-            <Box
-              boxSize="30px"
-              display="flex"
-              alignItems="center"
-              cursor="pointer"
-            >
-              <CloseIcon />
-            </Box>
-          </Link>
+            <Link href="/" legacyBehavior style={{ position: "relative" }}>
+              <Box
+                boxSize="30px"
+                display="flex"
+                alignItems="center"
+                cursor="pointer"
+              >
+                <CloseIcon />
+              </Box>
+            </Link>
           </Center>
         </Container>
       </div>
