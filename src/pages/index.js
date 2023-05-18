@@ -105,10 +105,10 @@ export default function Home() {
               Hi, I&apos;m Christopher.
             </Text>
             <Text fontSize="2xl" align="center" justify="center">
-              Content writer, educator, and self-taught developer.
+              Founder of Unlock Your Sound and Songcards.
             </Text>
             <Text fontSize="1xl" align="center" justify="center">
-              I use React, ChakraUI, and Django Rest Framework.
+              I use Next.js, ChakraUI, and Django Rest Framework.
             </Text>
             <Center>
               <Link
