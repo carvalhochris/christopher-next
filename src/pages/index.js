@@ -105,7 +105,15 @@ export default function Home() {
               Hi, I&apos;m Christopher.
             </Text>
             <Text fontSize="2xl" align="center" justify="center">
-              Founder of Unlock Your Sound and Songcards.
+              Founder of{" "}
+              <ChakraLink href="https://unlockyoursound.com/" isExternal>
+                <Text as="u">Unlock Your Sound</Text>
+              </ChakraLink>{" "}
+              and{" "}
+              <ChakraLink href="https://beta.songcards.io/" isExternal>
+                <Text as="u">Songcards</Text>
+              </ChakraLink>
+              .
             </Text>
             <Text fontSize="1xl" align="center" justify="center">
               I use Next.js, ChakraUI, and Django Rest Framework.
