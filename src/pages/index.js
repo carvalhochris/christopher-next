@@ -45,7 +45,7 @@ export default function Home() {
         />
         <meta
           itemprop="image"
-          content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg"
+          content="https://unlockyoursound.io/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg"
         />
 
         {/* <!-- Facebook Meta Tags --> */}
@@ -58,7 +58,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg"
+          content="https://unlockyoursound.io/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg"
         />
 
         {/* <!-- Twitter Meta Tags --> */}
@@ -70,7 +70,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg"
+          content="https://unlockyoursound.io/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg"
         />
       </Head>
       <div>
