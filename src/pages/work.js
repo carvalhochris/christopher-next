@@ -21,7 +21,7 @@ import ColorModeSwitch from "../components/colormode";
 
 export async function getStaticProps() {
   const res = await axios.get(
-    "https://nameless-castle-58273.herokuapp.com/work"
+    "https://christophercarvalho.com/work.json"
   );
   const data = res.data;
   return {
