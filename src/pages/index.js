@@ -38,6 +38,7 @@ export default function Home() {
         {/* <link rel="icon" href="public/chris-64.ico" /> */}
 
         {/* <!-- Google / Search Engine Tags --> */}
+        <meta name="google-site-verification" content="9mckDoxn2fKYiTqXwwS4cJzduFl-2f0LnwF1q26G5yo" />
         <meta itemprop="name" content="Christopher Carvalho" />
         <meta
           itemprop="description"
