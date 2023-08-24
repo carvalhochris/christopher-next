@@ -20,6 +20,7 @@ import { GoCalendar } from "react-icons/go";
 import ColorModeSwitch from "../components/colormode";
 // import { InlineWidget } from "react-calendly";
 // import { PopupButton } from "react-calendly";
+import { AiFillYoutube } from "react-icons/ai";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -159,6 +160,12 @@ export default function Home() {
               isExternal
             >
               <BsMastodon size={30} />
+            </ChakraLink>
+               <ChakraLink
+              href="https://www.youtube.com/@unlockyoursound"
+              isExternal
+            >
+            <AiFillYoutube size={30} />
             </ChakraLink>
             <ChakraLink
               href="https://calendly.com/christopher-carvalho/30-minute-meeting-portfolio"
