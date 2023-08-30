@@ -6,9 +6,13 @@ export default function ColorModeSwitch() {
 
   return (
     <>
-      <Button onClick={toggleColorMode} mt={5} mb={5} >
-        {colorMode === "light" ? <MoonIcon size={5} /> : <SunIcon size={5} />}
-      </Button>
+      {/* <Button > */}
+      {colorMode === "light" ? (
+        <MoonIcon size={5} onClick={toggleColorMode} mt={8} mb={8} style={{cursor:'pointer'}} />
+      ) : (
+        <SunIcon size={5} onClick={toggleColorMode} mt={8} mb={8}style={{cursor:'pointer'}} />
+      )}
+      {/* </Button> */}
     </>
   );
 }
