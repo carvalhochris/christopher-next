@@ -152,7 +152,7 @@ export default function Home() {
             >
               <AiFillLinkedin size={30} />
             </ChakraLink>
-            <ChakraLink href="https://twitter.com/mkdir_cc" isExternal>
+            <ChakraLink href="https://twitter.com/unlockyoursound" isExternal>
               <AiOutlineTwitter size={30} />
             </ChakraLink>
             <ChakraLink
