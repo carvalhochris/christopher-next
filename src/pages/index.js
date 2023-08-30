@@ -118,7 +118,7 @@ export default function Home() {
               .
             </Text>
             <Text fontSize="1xl" align="center" justify="center">
-              I use Next.js, ChakraUI, and Django Rest Framework.
+              I write apps in Next.js, ChakraUI, FastAPI, and Django Rest Framework.
             </Text>
             <Center>
               <Link
