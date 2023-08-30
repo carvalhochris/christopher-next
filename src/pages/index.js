@@ -168,7 +168,7 @@ export default function Home() {
             <AiFillYoutube size={30} />
             </ChakraLink>
             <ChakraLink
-              href="https://calendly.com/christopher-carvalho/30-minute-meeting-portfolio"
+              href="https://calendly.com/christopher-carvalho/songcards-onboard"
               isExternal
             >
               <GoCalendar size={30} />
