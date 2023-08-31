@@ -33,7 +33,7 @@ export default function Home() {
         <title>Christopher Carvalho</title>
         <meta
           name="description"
-          content="Content writer, educator, and self-taught developer"
+          content="Founder of Unlock Your Sound and Songcards"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <link rel="icon" href="public/chris-64.ico" /> */}
@@ -43,7 +43,7 @@ export default function Home() {
         <meta itemprop="name" content="Christopher Carvalho" />
         <meta
           itemprop="description"
-          content="Content writer, educator, and self-taught developer"
+          content="Founder of Unlock Your Sound and Songcards"
         />
         <meta
           itemprop="image"
@@ -56,7 +56,7 @@ export default function Home() {
         <meta property="og:title" content="Christopher Carvalho" />
         <meta
           property="og:description"
-          content="Content writer, educator, and self-taught developer"
+          content="Founder of Unlock Your Sound and Songcards"
         />
         <meta
           property="og:image"
@@ -68,7 +68,7 @@ export default function Home() {
         <meta name="twitter:title" content="Christopher Carvalho" />
         <meta
           name="twitter:description"
-          content="Content writer, educator, and self-taught developer"
+          content="Founder of Unlock Your Sound and Songcards"
         />
         <meta
           name="twitter:image"
