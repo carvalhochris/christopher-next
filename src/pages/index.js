@@ -123,8 +123,8 @@ export default function Home() {
             <Center>
               <Link
                 href="/work"
-                legacyBehavior
-                style={{ position: "relative" }}
+                // legacyBehavior
+                // style={{ position: "relative" }}
               >
                 <Button
                   colorScheme="blue"

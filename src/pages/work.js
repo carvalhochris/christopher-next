@@ -20,9 +20,7 @@ import { CloseIcon, ArrowBackIcon } from "@chakra-ui/icons";
 import ColorModeSwitch from "../components/colormode";
 
 export async function getStaticProps() {
-  const res = await axios.get(
-    "https://christophercarvalho.com/work.json"
-  );
+  const res = await axios.get("https://christophercarvalho.com/work.json");
   const data = res.data;
   return {
     props: { data },
@@ -82,9 +80,9 @@ export default function WorkPage({ data }) {
           <ColorModeSwitch />
         </Center>
         <Container mt={10} mb={100}>
-          <Link href="/" legacyBehavior style={{ position: "relative" }}>
+          <Link href="/" style={{ position: "relative" }}>
             {/* <Box > */}
-              <ArrowBackIcon boxSize="30px" mb={10} cursor="pointer" />
+            <ArrowBackIcon boxSize="30px" mb={10} cursor="pointer" />
             {/* </Box> */}
           </Link>
           <Heading as="h1" mb={10}>
@@ -120,7 +118,7 @@ export default function WorkPage({ data }) {
           ))}
           {/* <Divider /> */}
           <Center>
-            <Link href="/" legacyBehavior style={{ position: "relative" }}>
+            <Link href="/" style={{ position: "relative" }}>
               <Box
                 boxSize="30px"
                 display="flex"
