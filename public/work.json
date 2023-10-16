@@ -41,15 +41,6 @@
     ]
   },
   {
-    "id": 9,
-    "pinned": false,
-    "title": "WPurity",
-    "year": 2023,
-    "link": "https://www.wordpurity.com/",
-    "desc": "WordPress REST sanitiser made with Django Rest Framework, Beautiful Soup, and love.",
-    "skills": ["html", "Django Rest Framework", "Python", "git", "heroku"]
-  },
-  {
     "id": 3,
     "pinned": false,
     "title": "The Academy of Contemporary Music",
