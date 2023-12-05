@@ -41,6 +41,21 @@
     ]
   },
   {
+    "id": 12,
+    "pinned": true,
+    "title": "Pure Typescript",
+    "year": 2023,
+    "link": "https://puretypescript.com/",
+    "desc": "An online resource for Typescript developers and enthusiasts",
+    "skills": [
+      "React",
+      "Typescript",
+      "Next.js",
+      "Prisma",
+      "Vercel"
+    ]
+  },
+  {
     "id": 3,
     "pinned": false,
     "title": "The Academy of Contemporary Music",
