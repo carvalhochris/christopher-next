@@ -90,9 +90,9 @@ export default function WorkPage({ data }: DataProps) {
         />
       </Head>
       <div>
-        <Center>
+        {/* <Center>
           <ColorModeSwitch />
-        </Center>
+        </Center> */}
         <Container mt={10} mb={100}>
           <Link href="/" style={{ position: "relative" }}>
             {/* <Box > */}
@@ -103,9 +103,9 @@ export default function WorkPage({ data }: DataProps) {
             The Work
           </Heading>
           <Divider />
-          {data.map((item) => (
+          {data.map((item, index) => (
             // <Center>
-            <Container key={item.id} mb={5} mt={5} pl={0} pr={0}>
+            <Container key={index} mb={5} mt={5} pl={0} pr={0}>
               {/* <Card maxW={350} minHeight={300} p={3} m={5}> */}
               <Heading as="h2" size="md" mb={5}>
                 {item.title}

@@ -76,9 +76,9 @@ export default function Home() {
         />
       </Head>
       <div>
-        <Center>
+        {/* <Center>
           <ColorModeSwitch />
-        </Center>
+        </Center> */}
         <Center>
           {/* <Image
                 className="artistimg"
@@ -97,10 +97,7 @@ export default function Home() {
           />
         </Center>
         <br></br>
-        <Center>
-          <Text></Text>
-          <Text></Text>
-        </Center>
+       
         <Center>
           <Stack spacing={6} maxW={350}>
             <Text fontSize="3xl" align="center" justifyContent="center">

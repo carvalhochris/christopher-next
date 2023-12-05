@@ -1,6 +1,5 @@
 [
   {
-    "id": 11,
     "pinned": true,
     "title": "Songcards",
     "year": 2023,
@@ -20,7 +19,6 @@
     ]
   },
   {
-    "id": 10,
     "pinned": true,
     "title": "Unlock Your Sound",
     "year": 2023,
@@ -41,22 +39,14 @@
     ]
   },
   {
-    "id": 12,
     "pinned": true,
     "title": "Pure Typescript",
     "year": 2023,
     "link": "https://puretypescript.com/",
     "desc": "An online resource for Typescript developers and enthusiasts",
-    "skills": [
-      "React",
-      "Typescript",
-      "Next.js",
-      "Prisma",
-      "Vercel"
-    ]
+    "skills": ["React", "Typescript", "Next.js", "Prisma", "Vercel"]
   },
   {
-    "id": 3,
     "pinned": false,
     "title": "The Academy of Contemporary Music",
     "year": 2022,
@@ -65,7 +55,6 @@
     "skills": ["content writing", "lecturing", "marketing"]
   },
   {
-    "id": 1,
     "pinned": false,
     "title": "Pirate.com",
     "year": 2022,
@@ -74,7 +63,6 @@
     "skills": ["html", "content writing", "seo"]
   },
   {
-    "id": 8,
     "pinned": false,
     "title": "Music Ally",
     "year": 2021,
@@ -83,7 +71,6 @@
     "skills": ["wordpress", "LearnDash", "Asana", "BuddyBoss", "mentoring"]
   },
   {
-    "id": 6,
     "pinned": false,
     "title": "Best Selling Udemy Instructor",
     "year": 2018,
@@ -92,7 +79,6 @@
     "skills": ["content writing", "copywriting", "video production"]
   },
   {
-    "id": 5,
     "pinned": false,
     "title": "Stonehenge 360",
     "year": 2017,

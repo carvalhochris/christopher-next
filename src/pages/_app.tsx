@@ -1,5 +1,6 @@
 // import '@/styles/globals.css'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, Center } from '@chakra-ui/react'
+import ColorModeSwitch from '../components/colormode'
 // import theme from '@/theme'
 // import theme from '@/theme'
 import theme from '../theme'
@@ -11,6 +12,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraProvider theme={theme}>
+       <Center>
+          <ColorModeSwitch />
+        </Center>
       <Component {...pageProps} />
     </ChakraProvider>
   )
