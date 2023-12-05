@@ -17,7 +17,9 @@ import {
   Link as ChakraLink,
 } from "@chakra-ui/react";
 import { CloseIcon, ArrowBackIcon } from "@chakra-ui/icons";
+// import ColorModeSwitch from "../components/colormode";
 import ColorModeSwitch from "../components/colormode";
+import React from "react";
 
 export async function getStaticProps() {
   const res = await axios.get("https://christophercarvalho.com/work.json");
@@ -40,13 +42,13 @@ export default function WorkPage({ data }) {
         {/* <link rel="icon" href="public/chris-64.ico" /> */}
 
         {/* <!-- Google / Search Engine Tags --> */}
-        <meta itemprop="name" content="Christopher Carvalho" />
+        <meta itemProp="name" content="Christopher Carvalho" />
         <meta
-          itemprop="description"
+          itemProp="description"
           content="Content writer, educator, and self-taught developer"
         />
         <meta
-          itemprop="image"
+          itemProp="image"
           content="https://unlockyoursound.com/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg"
         />
 
@@ -89,33 +91,41 @@ export default function WorkPage({ data }) {
             The Work
           </Heading>
           <Divider />
-          {data.map((item) => (
-            // <Center>
-            <Container key={item.id} mb={5} mt={5} pl={0} pr={0}>
-              {/* <Card maxW={350} minHeight={300} p={3} m={5}> */}
-              <Heading as="h2" size="md" mb={5}>
-                {item.title}
-              </Heading>
-              <Text mb={5}>{item.desc}</Text>
-              <Wrap mt={2}>
-                {item.skills.map((skill, index) => (
-                  <div key={index}>
-                    <WrapItem>
-                      <Badge>{skill}</Badge>
-                    </WrapItem>
-                  </div>
-                ))}
-              </Wrap>
-              <ChakraLink href={item.link} isExternal>
-                <Button colorScheme="blue" size="sm" mt={7}>
-                  Learn More
-                </Button>
-              </ChakraLink>
-              <Divider mb={10} mt={10} />
-              {/* </Card> */}
-            </Container>
-            //   </Center>
-          ))}
+          {data.map(
+            (item: {
+              id: number;
+              title: string;
+              desc: string;
+              link: string;
+              skills: [string];
+            }) => (
+              // <Center>
+              <Container key={item.id} mb={5} mt={5} pl={0} pr={0}>
+                {/* <Card maxW={350} minHeight={300} p={3} m={5}> */}
+                <Heading as="h2" size="md" mb={5}>
+                  {item.title}
+                </Heading>
+                <Text mb={5}>{item.desc}</Text>
+                <Wrap mt={2}>
+                  {item.skills.map((skill: string, index: number) => (
+                    <div key={index}>
+                      <WrapItem>
+                        <Badge>{skill}</Badge>
+                      </WrapItem>
+                    </div>
+                  ))}
+                </Wrap>
+                <ChakraLink href={item.link} isExternal>
+                  <Button colorScheme="blue" size="sm" mt={7}>
+                    Learn More
+                  </Button>
+                </ChakraLink>
+                <Divider mb={10} mt={10} />
+                {/* </Card> */}
+              </Container>
+              //   </Center>
+            )
+          )}
           {/* <Divider /> */}
           <Center>
             <Link href="/" style={{ position: "relative" }}>

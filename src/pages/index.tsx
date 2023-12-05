@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 // import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+// import styles from "@/styles/Home.module.css";
 import { Button, Container } from "@chakra-ui/react";
 import { CloseButton } from "@chakra-ui/close-button";
 import { Center, Link as ChakraLink } from "@chakra-ui/react";
@@ -40,13 +40,13 @@ export default function Home() {
 
         {/* <!-- Google / Search Engine Tags --> */}
         <meta name="google-site-verification" content="9mckDoxn2fKYiTqXwwS4cJzduFl-2f0LnwF1q26G5yo" />
-        <meta itemprop="name" content="Christopher Carvalho" />
+        <meta itemProp="name" content="Christopher Carvalho" />
         <meta
-          itemprop="description"
+          itemProp="description"
           content="Founder of Unlock Your Sound and Songcards"
         />
         <meta
-          itemprop="image"
+          itemProp="image"
           content="https://unlockyoursound.io/wp-content/uploads/2021/08/Chris-Main-photo2-calendly-scaled.jpg"
         />
 
@@ -103,10 +103,10 @@ export default function Home() {
         </Center>
         <Center>
           <Stack spacing={6} maxW={350}>
-            <Text fontSize="3xl" align="center" justify="center">
+            <Text fontSize="3xl" align="center" justifyContent="center">
               Hi, I&apos;m Christopher.
             </Text>
-            <Text fontSize="2xl" align="center" justify="center">
+            <Text fontSize="2xl" align="center" justifyContent="center">
               Founder of{" "}
               <ChakraLink href="https://unlockyoursound.com/" isExternal>
                 <Text as="u">Unlock Your Sound</Text>
@@ -117,7 +117,7 @@ export default function Home() {
               </ChakraLink>
               .
             </Text>
-            <Text fontSize="1xl" align="center" justify="center">
+            <Text fontSize="1xl" align="center" justifyContent="center">
               I write web apps in Next.js, ChakraUI, FastAPI, and Django Rest Framework.
             </Text>
             <Center>
@@ -139,7 +139,7 @@ export default function Home() {
           </Stack>
         </Center>
         <Container mt={0} pt={0} maxW={340}>
-          <Flex isInline gap={3}>
+          <Flex gap={3}>
             <ChakraLink href="https://github.com/carvalhochris" isExternal>
               <AiFillGithub size={30} />
             </ChakraLink>
